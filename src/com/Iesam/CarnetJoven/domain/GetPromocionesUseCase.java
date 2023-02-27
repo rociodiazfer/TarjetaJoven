@@ -14,4 +14,8 @@ public class GetPromocionesUseCase {
         return this.promocionRepository.getById(promocionId);
     }
 
+    public List<Promocion> execute(){
+        return this.promocionRepository.getAll();
+    }
+
 }

@@ -13,5 +13,8 @@ public class GetEmpresasUseCase {
         return this.empresaRepository.getById(empresaId);
     }
 
+    public List<Empresa> execute(){
+        return this.empresaRepository.getAll();
+    }
 
 }

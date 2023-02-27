@@ -13,4 +13,8 @@ public class GetUsuarioUseCase {
         return this.usuarioRepository.getById(usuarioId);
     }
 
+    public List<Usuario> execute(){
+        return this.usuarioRepository.getAll();
+    }
+
 }

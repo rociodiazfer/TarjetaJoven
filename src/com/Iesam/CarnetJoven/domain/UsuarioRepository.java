@@ -10,6 +10,5 @@ public interface UsuarioRepository {
 
     public List<Usuario> getAll();
 
-    List<Usuario> getAllWithRemote();
 
 }

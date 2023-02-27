@@ -10,6 +10,9 @@ public class GetComprasUseCase {
         this.repository = repository;
     }
 
+    public Compra execute(String compraId){
+        return this.repository.getById(compraId);
+    }
     public List<Compra>execute(){
         return this.repository.getAll();
     }

@@ -9,6 +9,12 @@ import com.Iesam.CarnetJoven.domain.GetComprasUseCase;
 import java.util.List;
 
 public class PrintComprasView {
-    GetComprasUseCase getComprasUseCase = new GetComprasUseCase(new CompraDataRepository(CompraFileLocalDataSource.getInstance()));
 
-}
+    public void print(){
+
+    GetComprasUseCase getComprasUseCase = new GetComprasUseCase(new CompraDataRepository(CompraFileLocalDataSource.getInstance()));
+    List<Compra>compras = getComprasUseCase.execute();
+    for(Compra compra :compras){
+        System.out.println(compra.toString());
+    }
+}}

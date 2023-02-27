@@ -9,7 +9,10 @@ import com.Iesam.CarnetJoven.domain.PromocionRepository;
 
 public class NewPromocionForm {
 
-
+    public void createNewPromocion(){
+        Promocion promocion = buildPromocion();
+        save(promocion);
+    }
 
 
     private Promocion buildPromocion(){

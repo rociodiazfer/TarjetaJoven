@@ -10,5 +10,5 @@ public interface PromocionRepository {
 
     public List<Promocion> getAll();
 
-    List<Promocion> getAllWithRemote();
+
 }

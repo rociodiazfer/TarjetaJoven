@@ -12,4 +12,9 @@ public class PrintPromocionesView {
 
     public void print() {
         GetPromocionesUseCase useCase = new GetPromocionesUseCase(new PromocionDataRepository(PromocionFileLocalDataSource.getInstance()));
+        List<Promocion> promocions = useCase.execute();
+        for(Promocion promocion: promocions){
+            System.out.println(promocion.toString());
+        }
+
 }}
